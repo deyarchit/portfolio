@@ -104,6 +104,8 @@ export default function Home() {
                 <div className="w-64 h-64 rounded-full overflow-hidden">
                   <Image
                     src="./Archit.jpeg"
+                    width={256}
+                    height={256}
                     alt="Archit Dey"
                     className="w-full h-full object-cover"
                     unoptimized
