@@ -1,13 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = { 
-  output: 'export',
-  eslint: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has ESLint errors. 
-    // https://nextjs.org/docs/app/api-reference/config/next-config-js/eslint
-    ignoreDuringBuilds: true,
-  },
 };
 
 export default nextConfig;

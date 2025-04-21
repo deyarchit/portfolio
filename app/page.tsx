@@ -1,14 +1,15 @@
 import Link from "next/link"
-import { ArrowRight, Github, Linkedin, Mail, Users, Share2, Code, Settings, Target, Award, Shield, TrendingDown, Heart } from "lucide-react"
+import Image from "next/image"
+import { ArrowRight, Github, Linkedin, Mail, Users, Share2,  Target, Award, TrendingDown, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ProjectCard from "@/components/project-card"
 import ValueCard from "@/components/value-card"
 import ExperienceTimeline from "@/components/experience-timeline"
 import SkillsSection from "@/components/skills-section"
-import TestimonialSection from "@/components/testimonial-section"
-import ContactSection from "@/components/contact-section"
 import EducationSection from "@/components/education-section"
-import CertificationsSection from "@/components/certifications-section"
+// import TestimonialSection from "@/components/testimonial-section"
+// import ContactSection from "@/components/contact-section"
+// import CertificationsSection from "@/components/certifications-section"
 
 export default function Home() {
   return (
@@ -101,7 +102,7 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center">
                 <div className="w-64 h-64 rounded-full overflow-hidden">
-                  <img
+                  <Image
                     src="/Archit.jpeg"
                     alt="Archit Dey"
                     className="w-full h-full object-cover"

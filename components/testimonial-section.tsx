@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
+import Image from "next/image"
 
 export default function TestimonialSection() {
   // Update the testimonials with placeholder content
@@ -51,7 +52,7 @@ export default function TestimonialSection() {
           <blockquote className="text-xl md:text-2xl mb-8 italic">{testimonials[currentIndex].quote}</blockquote>
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-full overflow-hidden">
-              <img
+              <Image
                 src={testimonials[currentIndex].image || "/placeholder.svg"}
                 alt={testimonials[currentIndex].author}
                 className="w-full h-full object-cover"

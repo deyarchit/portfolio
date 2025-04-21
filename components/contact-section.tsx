@@ -41,8 +41,8 @@ export default function ContactSection() {
     <div className="grid md:grid-cols-2 gap-8">
       <div>
         <p className="text-lg mb-6">
-          I'm always interested in hearing about new projects and opportunities. Whether you have a question or just
-          want to say hello, I'll try my best to get back to you!
+          I`&apos;`m always interested in hearing about new projects and opportunities. Whether you have a question or just
+          want to say hello, I`&apos;`ll try my best to get back to you!
         </p>
 
         <div className="space-y-4 mb-6">
