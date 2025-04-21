@@ -2,28 +2,39 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Cloud, Code, Database, Server, Settings, Users } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
-
 export default function SkillsSection() {
-  const technicalSkills = [
-    "Helm Charts",
-    "Terraform",
-    "Kubernetes",
-    "Go",
-    "AWS & GCP",
-    "Microservices Architecture",
-    "Java & Spring",
-    "CI/CD (Spinnaker, Jenkins)",
-    "REST API Design",
-    "ReactJS",
-  ]
+  const programmingLanguages = ["Go", "Python", "Typescript"]
+  const cloudProviders = ["AWS", "GCP"]
+  const cloudSolutions = ["Storage", "Eventing", "Compute", "IAM"]
+  const cloudTechnologies = ["Kubernetes", "Helm", "Terraform"]
+  const backendSkills = ["Cloud-native microservices", "API development", "Postgres-SQL", "Redis"]
+  const frontendSkills = ["React", "Axios", "Bootstrap"]
 
-  const leadershipSkills = [
-    "Product Ownership",
-    "Technical Leadership",
-    "Project Coordination",
-    "Stakeholder Management",
-    "Mentoring & Knowledge Sharing",
-    "Risk Assessment",
+  const skills = [
+    {
+      category: "Programming Languages",
+      items: programmingLanguages,
+    },
+    {
+      category: "Cloud Providers",
+      items: cloudProviders,
+    },
+    {
+      category: "Cloud Solutions",
+      items: cloudSolutions,
+    },
+    {
+      category: "Cloud Technologies",
+      items: cloudTechnologies,
+    },
+    {
+      category: "Backend",
+      items: backendSkills,
+    },
+    {
+      category: "Frontend",
+      items: frontendSkills,
+    },
   ]
 
   const expertiseAreas = [
@@ -62,23 +73,21 @@ export default function SkillsSection() {
   return (
     <div className="space-y-12">
       <div>
-        <h3 className="text-xl font-bold mb-6">Technical Skills</h3>
-        <div className="flex flex-wrap gap-2">
-          {technicalSkills.map((skill, index) => (
-            <Badge key={index} variant="secondary">
-              {skill}
-            </Badge>
-          ))}
-        </div>
-      </div>
-
-      <div>
-        <h3 className="text-xl font-bold mb-6">Leadership & Management</h3>
-        <div className="flex flex-wrap gap-2">
-          {leadershipSkills.map((skill, index) => (
-            <Badge key={index} variant="secondary">
-              {skill}
-            </Badge>
+        <h3 className="text-xl font-bold mb-6">Skills</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {skills.map((skillGroup, index) => (
+            <Card key={index} className="border-l-2 border-primary">
+              <CardContent className="">
+              <h4 className="text-md font-semibold mb-2">{skillGroup.category}</h4>
+              <div className="flex flex-wrap gap-2">
+                {skillGroup.items.map((skill, skillIndex) => (
+                  <Badge key={skillIndex} variant="secondary">
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>
