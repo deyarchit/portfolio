@@ -13,11 +13,6 @@ export default function EducationSection() {
       degree: "Bachelor of Engineering (BE), Electronics and Communications Engineering",
       period: "2007 - 2011",
     },
-    {
-      institution: "Kendriya Vidyalaya",
-      degree: "Science and Computer Science",
-      period: "2005 - 2007",
-    },
   ]
 
   return (

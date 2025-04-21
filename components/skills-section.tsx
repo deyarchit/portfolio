@@ -25,11 +25,11 @@ export default function SkillsSection() {
     { name: "Risk Assessment", level: 82 },
   ]
 
-  const languages = [
-    { name: "English", level: "Full Professional" },
-    { name: "Bengali", level: "Professional Working" },
-    { name: "Hindi", level: "Professional Working" },
-  ]
+  // const languages = [
+  //   { name: "English", level: "Full Professional" },
+  //   { name: "Bengali", level: "Professional Working" },
+  //   { name: "Hindi", level: "Professional Working" },
+  // ]
 
   const expertiseAreas = [
     {
@@ -96,7 +96,7 @@ export default function SkillsSection() {
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <h3 className="text-xl font-bold mb-6">Languages</h3>
         <div className="grid md:grid-cols-3 gap-4">
           {languages.map((language, index) => (
@@ -108,7 +108,7 @@ export default function SkillsSection() {
             </Card>
           ))}
         </div>
-      </div>
+      </div> */}
 
       <div>
         <h3 className="text-xl font-bold mb-6">Areas of Expertise</h3>

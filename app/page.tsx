@@ -33,16 +33,33 @@ export default function Home() {
             <Link href="#education" className="text-sm font-medium hover:text-primary transition-colors">
               Education
             </Link>
-            <Link href="#certifications" className="text-sm font-medium hover:text-primary transition-colors">
+            {/* <Link href="#certifications" className="text-sm font-medium hover:text-primary transition-colors">
               Certifications
             </Link>
             <Link href="#contact" className="text-sm font-medium hover:text-primary transition-colors">
               Contact
-            </Link>
+            </Link> */}
           </nav>
-          <Button asChild size="sm" className="hidden md:flex">
-            <Link href="#contact">Get in touch</Link>
-          </Button>
+          <div className="flex space-x-4">
+            <Link href="https://github.com" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Github className="h-5 w-5" />
+              <span className="sr-only">GitHub</span>
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/archit-dey-b412365a/"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Linkedin className="h-5 w-5" />
+              <span className="sr-only">LinkedIn</span>
+            </Link>
+            <Link
+              href="mailto:dey.archit@gmail.com"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Mail className="h-5 w-5" />
+              <span className="sr-only">Email</span>
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -70,7 +87,7 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-16 bg-muted/50">
+        <section id="about" className="py-16">
           <div className="container">
             <h2 className="text-3xl font-bold tracking-tight mb-8">About Archit</h2>
             <div className="grid md:grid-cols-2 gap-12">
@@ -112,7 +129,7 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-16 bg-muted/50">
+        <section id="projects" className="py-16">
           <div className="container">
             <h2 className="text-3xl font-bold tracking-tight mb-8">Featured Projects</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -163,7 +180,7 @@ export default function Home() {
         </section>
 
         {/* Education Section */}
-        <section id="education" className="py-16 bg-muted/50">
+        <section id="education" className="py-16">
           <div className="container">
             <h2 className="text-3xl font-bold tracking-tight mb-8">Education</h2>
             <EducationSection />
@@ -171,29 +188,29 @@ export default function Home() {
         </section>
 
         {/* Certifications Section */}
-        <section id="certifications" className="py-16 container">
+        {/* <section id="certifications" className="py-16 container">
           <div className="container">
             <h2 className="text-3xl font-bold tracking-tight mb-8">Certifications & Awards</h2>
             <CertificationsSection />
           </div>
-        </section>
+        </section> */}
 
         {/* Testimonials Section */}
-        <section id="testimonials" className="py-16 bg-muted/50">
+        {/* <section id="testimonials" className="py-16">
           <div className="container">
             <h2 className="text-3xl font-bold tracking-tight mb-8">What People Say</h2>
             <TestimonialSection />
           </div>
-        </section>
+        </section> */}
 
         {/* Contact Section */}
-        <section id="contact" className="py-16 container">
+        {/* <section id="contact" className="py-16 container">
           <h2 className="text-3xl font-bold tracking-tight mb-8">Get In Touch</h2>
           <ContactSection />
-        </section>
+        </section> */}
       </main>
 
-      <footer className="border-t py-8 bg-background">
+      {/* <footer className="border-t py-8 bg-background">
         <div className="container flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
             © {new Date().getFullYear()} Archit Dey. All rights reserved.
@@ -219,7 +236,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   )
 }
