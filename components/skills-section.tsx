@@ -1,35 +1,30 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
 import { Cloud, Code, Database, Server, Settings, Users } from "lucide-react"
+import { Badge } from "@/components/ui/badge"
+
 
 export default function SkillsSection() {
   const technicalSkills = [
-    { name: "Helm Charts", level: 95 },
-    { name: "Terraform", level: 95 },
-    { name: "Kubernetes", level: 92 },
-    { name: "Go", level: 90 },
-    { name: "AWS & GCP", level: 88 },
-    { name: "Microservices Architecture", level: 88 },
-    { name: "Java & Spring", level: 85 },
-    { name: "CI/CD (Spinnaker, Jenkins)", level: 85 },
-    { name: "REST API Design", level: 82 },
-    { name: "ReactJS", level: 75 },
+    "Helm Charts",
+    "Terraform",
+    "Kubernetes",
+    "Go",
+    "AWS & GCP",
+    "Microservices Architecture",
+    "Java & Spring",
+    "CI/CD (Spinnaker, Jenkins)",
+    "REST API Design",
+    "ReactJS",
   ]
 
   const leadershipSkills = [
-    { name: "Product Ownership", level: 90 },
-    { name: "Technical Leadership", level: 88 },
-    { name: "Project Coordination", level: 85 },
-    { name: "Stakeholder Management", level: 85 },
-    { name: "Mentoring & Knowledge Sharing", level: 87 },
-    { name: "Risk Assessment", level: 82 },
+    "Product Ownership",
+    "Technical Leadership",
+    "Project Coordination",
+    "Stakeholder Management",
+    "Mentoring & Knowledge Sharing",
+    "Risk Assessment",
   ]
-
-  // const languages = [
-  //   { name: "English", level: "Full Professional" },
-  //   { name: "Bengali", level: "Professional Working" },
-  //   { name: "Hindi", level: "Professional Working" },
-  // ]
 
   const expertiseAreas = [
     {
@@ -68,47 +63,25 @@ export default function SkillsSection() {
     <div className="space-y-12">
       <div>
         <h3 className="text-xl font-bold mb-6">Technical Skills</h3>
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="flex flex-wrap gap-2">
           {technicalSkills.map((skill, index) => (
-            <div key={index} className="space-y-2">
-              <div className="flex justify-between">
-                <span className="font-medium">{skill.name}</span>
-                <span className="text-muted-foreground">{skill.level}%</span>
-              </div>
-              <Progress value={skill.level} className="h-2" />
-            </div>
+            <Badge key={index} variant="secondary">
+              {skill}
+            </Badge>
           ))}
         </div>
       </div>
 
       <div>
         <h3 className="text-xl font-bold mb-6">Leadership & Management</h3>
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="flex flex-wrap gap-2">
           {leadershipSkills.map((skill, index) => (
-            <div key={index} className="space-y-2">
-              <div className="flex justify-between">
-                <span className="font-medium">{skill.name}</span>
-                <span className="text-muted-foreground">{skill.level}%</span>
-              </div>
-              <Progress value={skill.level} className="h-2" />
-            </div>
+            <Badge key={index} variant="secondary">
+              {skill}
+            </Badge>
           ))}
         </div>
       </div>
-
-      {/* <div>
-        <h3 className="text-xl font-bold mb-6">Languages</h3>
-        <div className="grid md:grid-cols-3 gap-4">
-          {languages.map((language, index) => (
-            <Card key={index}>
-              <CardContent className="pt-6">
-                <h4 className="text-lg font-bold mb-2">{language.name}</h4>
-                <p className="text-muted-foreground">{language.level}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </div> */}
 
       <div>
         <h3 className="text-xl font-bold mb-6">Areas of Expertise</h3>
