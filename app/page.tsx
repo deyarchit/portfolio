@@ -1,7 +1,8 @@
 import Link from "next/link"
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Mail, Users, Share2, Code, Settings, Target, Award, Shield, TrendingDown, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ProjectCard from "@/components/project-card"
+import ValueCard from "@/components/value-card"
 import ExperienceTimeline from "@/components/experience-timeline"
 import SkillsSection from "@/components/skills-section"
 import TestimonialSection from "@/components/testimonial-section"
@@ -30,9 +31,12 @@ export default function Home() {
             <Link href="#skills" className="text-sm font-medium hover:text-primary transition-colors">
               Skills
             </Link>
+            <Link href="#values" className="text-sm font-medium hover:text-primary transition-colors">
+              Values
+            </Link>
             <Link href="#education" className="text-sm font-medium hover:text-primary transition-colors">
               Education
-            </Link>
+            </Link>            
             {/* <Link href="#certifications" className="text-sm font-medium hover:text-primary transition-colors">
               Certifications
             </Link>
@@ -90,9 +94,9 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <p className="text-lg mb-4">
-                Software engineer with more than a decade of experience across diverse software domains. 
-                A collaborative team player who believes in collective growth and consistently works to enhance services to meet evolving business needs. 
-                Brings a strong Product Ownership mindset, continuously seeking ways to improve the product while ensuring alignment with the overall vision.
+                  Software engineer with more than a decade of experience across diverse software domains.
+                  A collaborative team player who believes in collective growth and consistently works to enhance services to meet evolving business needs.
+                  Brings a strong Product Ownership mindset, continuously seeking ways to improve the product while ensuring alignment with the overall vision.
                 </p>
               </div>
               <div className="flex items-center justify-center">
@@ -164,6 +168,50 @@ export default function Home() {
           <div className="container">
             <h2 className="text-3xl font-bold tracking-tight mb-8">Education</h2>
             <EducationSection />
+          </div>
+        </section>
+
+        {/* Values Section */}
+        <section id="values" className="py-16">
+          <div className="container">
+            <h2 className="text-3xl font-bold tracking-tight mb-8">My Values</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <ValueCard
+                title="People First"
+                description="Empowered, motivated teams solve any challenge. Positive spirits make the journey fulfilling."
+                icon={<Users className="h-6 w-6" />}
+              />
+              <ValueCard
+                title="Business-Centric Decisions"
+                description="Optimize for the organization's welfare, not just individual or team interests. Evaluate decisions with a holistic view."
+                icon={<Target className="h-6 w-6" />}
+              />
+              <ValueCard
+                title="Team Collaboration"
+                description="'We' is always stronger than 'I'. Foster a supportive environment where teammates elevate each other."
+                icon={<Share2 className="h-6 w-6" />}
+              />
+              <ValueCard
+                title="Fair Recognition & Incentives"
+                description="Acknowledge contributions justly to drive positive behavior and motivation."
+                icon={<Award className="h-6 w-6" />}
+              />
+              <ValueCard
+                title="Taming Complexity"
+                description="Actively invest effort to counteract entropy and maintain agility in systems and organizations."
+                icon={<TrendingDown className="h-6 w-6" />}
+              />
+              <ValueCard
+                title="Work-Life Harmony"
+                description="Balance is key for long-term well-being, perspective, and sustainable effort."
+                icon={<Heart className="h-6 w-6" />}
+              />
+              <ValueCard
+                title="Human Count, Not 'Head Count'"
+                description="Recognize and value employees as whole individuals, not just their cognitive capacity."
+                icon={<Users className="h-6 w-6" />}
+              />
+            </div>
           </div>
         </section>
 
