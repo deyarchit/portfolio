@@ -8,14 +8,14 @@ interface ProjectCardProps {
   title: string
   description: string
   tags: string[]
-  image: string
+  // image: string
   link?: string
 }
 
-export default function ProjectCard({ title, description, tags, image, link }: ProjectCardProps) {
+export default function ProjectCard({ title, description, tags, link }: ProjectCardProps) {
   return (
     <Card className="overflow-hidden group">
-      <div className="relative h-48 overflow-hidden">
+      {/* <div className="relative h-48 overflow-hidden">
         <Image
           src={image || "/placeholder.svg"}
           alt={title}
@@ -23,8 +23,8 @@ export default function ProjectCard({ title, description, tags, image, link }: P
           height={200}
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
-      </div>
-      <CardHeader className="pb-2">
+      </div> */}
+      <CardHeader>
         <h3 className="text-xl font-bold">{title}</h3>
       </CardHeader>
       <CardContent>

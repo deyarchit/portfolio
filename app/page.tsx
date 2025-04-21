@@ -79,40 +79,26 @@ export default function Home() {
                   View my work <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link href="#contact">Contact me</Link>
-              </Button>
             </div>
           </div>
         </section>
 
         {/* About Section */}
         <section id="about" className="py-16">
-          <div className="container">
+          <div className="container items-start">
             <h2 className="text-3xl font-bold tracking-tight mb-8">About Archit</h2>
-            <div className="grid md:grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <p className="text-lg mb-4">
-                  Software Engineer with around a decade of experience in the Industry. I have worked on various problem
-                  spaces within the software domain ranging from designing UI test automation frameworks, front end
-                  applications, developing services for capturing code coverage from millions of test results,
-                  developing scalable cloud native services to manage lifecycle of deployment artifacts which support
-                  multi-cloud deployment strategy.
-                </p>
-                <p className="text-lg mb-4">
-                  My technical expertise spans cloud platforms (AWS, GCP), containerization (Kubernetes, Helm),
-                  infrastructure as code (Terraform), and microservices architecture. As a product owner, I excel at
-                  translating business requirements into technical specifications and managing product roadmaps.
-                </p>
-                <p className="text-lg">
-                  I'm passionate about creating resilient systems that can scale with business needs while maintaining a
-                  focus on security, cost optimization, and operational excellence.
+                Software engineer with more than a decade of experience across diverse software domains. 
+                A collaborative team player who believes in collective growth and consistently works to enhance services to meet evolving business needs. 
+                Brings a strong Product Ownership mindset, continuously seeking ways to improve the product while ensuring alignment with the overall vision.
                 </p>
               </div>
               <div className="flex items-center justify-center">
                 <div className="w-64 h-64 rounded-full overflow-hidden">
                   <img
-                    src="/placeholder.svg?height=256&width=256"
+                    src="/Archit.jpeg"
                     alt="Archit Dey"
                     className="w-full h-full object-cover"
                   />
@@ -123,7 +109,7 @@ export default function Home() {
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="py-16 container">
+        <section id="experience" className="py-6 container">
           <h2 className="text-3xl font-bold tracking-tight mb-8">Work Experience</h2>
           <ExperienceTimeline />
         </section>
@@ -134,40 +120,34 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight mb-8">Featured Projects</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <ProjectCard
-                title="Safe Container Lifecycle Initiative"
-                description="Architected and implemented secure container lifecycle management for multi-cloud environments."
+                title="Cloud Agnostic Managed Operations at Scale"
+                description="Laid the foundation for a a secure & scalable mechanism to provide developers at Salesforce the ability to perform various types of Kubernetes and Cloud resource operations on any cloud provider where Salesforce services get deployed."
                 tags={["Go", "Kubernetes", "Terraform", "AWS", "GCP"]}
-                image="/placeholder.svg?height=200&width=300"
               />
               <ProjectCard
-                title="Artifact Replication System"
-                description="Co-architected 15+ microservices using cloud native design patterns for secure artifact replication across cloud boundaries."
+                title="Cross-Substrate Artifact Management"
+                description="Co-architected 15+ microservices using cloud native design patterns for secure artifact replication, permission & lifecycle management of artifacts across multi-cloud environments."
                 tags={["Go", "Microservices", "Kubernetes", "AWS", "GCP"]}
-                image="/placeholder.svg?height=200&width=300"
               />
               <ProjectCard
-                title="Yum Metadata Updater Service"
-                description="Improved scalability to handle platform growth patterns and reduced update times on large yum repos by 66%."
+                title="Cloud Native Yum Repository"
+                description="Conceptualized & developed a Cloud Native Yum Repository which worked efficiently at enterprise scale. Implemented multiple scalability improvements to handle platform growth patterns and reduced repository metadat update times on large yum repos by 66%."
                 tags={["Go", "Kubernetes", "Helm", "Spinnaker"]}
-                image="/placeholder.svg?height=200&width=300"
               />
               <ProjectCard
                 title="Queue-based Autoscaling for Artifact Replicators"
                 description="Guided development and adoption of queue-based autoscaling using Keda for improved performance."
                 tags={["Keda", "Kubernetes", "Go", "Microservices"]}
-                image="/placeholder.svg?height=200&width=300"
               />
               <ProjectCard
-                title="Streaming Diff in Object Replicator"
+                title="Cross Substrate Object Replicator"
                 description="Implemented streaming diff functionality which reduced full bucket replication time by 80%."
                 tags={["Go", "AWS", "Cloud Storage", "Optimization"]}
-                image="/placeholder.svg?height=200&width=300"
               />
               <ProjectCard
-                title="Code Coverage Metrics System"
+                title="Code Coverage Metrics Processing System"
                 description="Built a distributed system to process code coverage metrics from millions of test executions, saving over 6000 compute hours weekly."
                 tags={["Java", "Spring", "Distributed Systems", "Kubernetes"]}
-                image="/placeholder.svg?height=200&width=300"
               />
             </div>
           </div>
