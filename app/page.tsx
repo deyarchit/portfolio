@@ -106,6 +106,7 @@ export default function Home() {
                     src="/Archit.jpeg"
                     alt="Archit Dey"
                     className="w-full h-full object-cover"
+                    unoptimized
                   />
                 </div>
               </div>
