@@ -103,7 +103,7 @@ export default function Home() {
               <div className="flex items-center justify-center">
                 <div className="w-64 h-64 rounded-full overflow-hidden">
                   <Image
-                    src="./Archit.jpeg"
+                    src="./Archit.png"
                     width={256}
                     height={256}
                     alt="Archit Dey"
