@@ -182,37 +182,37 @@ export default function Home() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <ValueCard
                 title="People First"
-                description="Empowered, motivated teams solve any challenge. Positive spirits make the journey fulfilling."
+                description="I firmly believe that people, when genuinely motivated to solve a challenge, can overcome any obstacle. A positive and collaborative spirit makes the journey truly rewarding."
                 icon={<Users className="h-6 w-6" />}
               />
               <ValueCard
                 title="Business-Centric Decisions"
-                description="Optimize for the organization's welfare, not just individual or team interests. Evaluate decisions with a holistic view."
+                description="My guiding principle is to make decisions that maximize the business's success, rather than prioritizing the interests of any single team or sub-organization. A comprehensive assessment of all relevant viewpoints is essential to informed decision-making."
                 icon={<Target className="h-6 w-6" />}
               />
               <ValueCard
                 title="Team Collaboration"
-                description="'We' is always stronger than 'I'. Foster a supportive environment where teammates elevate each other."
+                description="A team’s greatest strength lies in its collective identity. By prioritizing shared goals and fostering a ‘we’ mentality, I actively seek opportunities to reinforce these values and unlock the full potential of every team member."
                 icon={<Share2 className="h-6 w-6" />}
               />
               <ValueCard
                 title="Fair Recognition & Incentives"
-                description="Acknowledge contributions justly to drive positive behavior and motivation."
+                description="Fair recognition of contributions is fundamental to building a successful business. It fosters collaboration, creating a positive and productive environment that encourages innovation and growth."
                 icon={<Award className="h-6 w-6" />}
               />
               <ValueCard
                 title="Taming Complexity"
-                description="Actively invest effort to counteract entropy and maintain agility in systems and organizations."
+                description="Like all systems, businesses inevitably succumb to the law of entropy, characterized by an increasing tendency towards disorder. We must proactively invest in efforts to mitigate this complexity, ensuring the business maintains its agility and adaptability."
                 icon={<TrendingDown className="h-6 w-6" />}
               />
               <ValueCard
                 title="Work-Life Harmony"
-                description="Balance is key for long-term well-being, perspective, and sustainable effort."
+                description="Working with positive and solution-oriented people makes work engaging and fulfilling. However, I believe having some periods of time away from work is crucial for long-term well-being."
                 icon={<Heart className="h-6 w-6" />}
               />
               <ValueCard
-                title="Human Count, Not 'Head Count'"
-                description="Recognize and value employees as whole individuals, not just their cognitive capacity."
+                title="&quot;Human Count&quot;, Not &quot;Head Count&quot;"
+                description="The term ‘Head Count’—often used to represent employees—is a reductive and somewhat unsettling reminder that businesses frequently prioritize numbers over people. We should recognize and value employees as whole individuals."
                 icon={<Users className="h-6 w-6" />}
               />
             </div>
