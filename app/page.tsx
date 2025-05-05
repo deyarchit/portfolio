@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Github, Linkedin, Mail, Users, Share2,  Target, Award, TrendingDown, Heart } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Mail, Users, Share2, Target, Award, TrendingDown, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ProjectCard from "@/components/project-card"
 import ValueCard from "@/components/value-card"
@@ -37,7 +37,7 @@ export default function Home() {
             </Link>
             <Link href="#values" className="text-sm font-medium hover:text-primary transition-colors">
               Values
-            </Link>            
+            </Link>
             {/* <Link href="#certifications" className="text-sm font-medium hover:text-primary transition-colors">
               Certifications
             </Link>
@@ -128,34 +128,34 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight mb-8">Featured Projects</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <ProjectCard
-                title="Cloud Agnostic Managed Operations at Scale"
-                description="Laid the foundation for a a secure & scalable mechanism to provide developers at Salesforce the ability to perform various types of Kubernetes and Cloud resource operations on any cloud provider where Salesforce services get deployed."
+                title="Cloud-Agnostic Managed Operations at Scale"
+                description="Laid the foundation for a secure and scalable mechanism that allows thousands of Salesforce developers to perform various Kubernetes and Cloud resource operations on any cloud provider where Salesforce services are deployed."
                 tags={["Go", "Kubernetes", "Terraform", "AWS", "GCP"]}
               />
               <ProjectCard
                 title="Cross-Substrate Artifact Management"
-                description="Co-architected 15+ microservices using cloud native design patterns for secure artifact replication, permission & lifecycle management of artifacts across multi-cloud environments."
+                description="Co-architected a collection of 15+ single-purpose microservices using cloud-native design patterns for secure artifact replication, permission, and lifecycle management across multi-cloud environments."
                 tags={["Go", "Microservices", "Kubernetes", "AWS", "GCP"]}
               />
               <ProjectCard
-                title="Cloud Native Yum Repository"
-                description="Conceptualized & developed a Cloud Native Yum Repository which worked efficiently at enterprise scale. Implemented multiple scalability improvements to handle platform growth patterns and reduced repository metadat update times on large yum repos by 66%."
-                tags={["Go", "Kubernetes", "Helm", "Spinnaker"]}
-              />
-              <ProjectCard
                 title="Queue-based Autoscaling for Artifact Replicators"
-                description="Guided development and adoption of queue-based autoscaling using Keda for improved performance."
-                tags={["Keda", "Kubernetes", "Go", "Microservices"]}
+                description="Led the development of a system that automatically scaled based on queue demand. This system managed up to PetaBytes of data, guaranteeing high availability and reliability."
+                tags={["Go", "Keda", "Microservices", "Cloud Eventing", "Kubernetes"]}
               />
               <ProjectCard
-                title="Cross Substrate Object Replicator"
-                description="Implemented streaming diff functionality which reduced full bucket replication time by 80%."
-                tags={["Go", "AWS", "Cloud Storage", "Optimization"]}
+                title="Cloud-Native Yum Repository"
+                description="Conceptualized & developed a Cloud-Native Yum Repository which worked efficiently at enterprise scale. Implemented multiple scalability improvements to handle platform growth patterns and reduced repository metadata update times on large Yum repos by 66%."
+                tags={["Go", "Kubernetes", "Helm", "Spinnaker", "AWS", "GCP"]}
               />
               <ProjectCard
                 title="Code Coverage Metrics Processing System"
-                description="Built a distributed system to process code coverage metrics from millions of test executions, saving over 6000 compute hours weekly."
-                tags={["Java", "Spring", "Distributed Systems", "Kubernetes"]}
+                description="Enhanced the code coverage metrics processing system to rapidly process data from millions of test executions, saving over 6,000 compute hours weekly."
+                tags={["Java", "Spring Boot", "Distributed Systems"]}
+              />
+              <ProjectCard
+                title="Test Asset Management Dashboard"
+                description="Developed a dashboard that streamlined test asset management for scrum teams, enabling rapid identification and action on failed test cases – particularly for teams managing over 120,000 tests."
+                tags={["React", "Java", "Database"]}
               />
             </div>
           </div>
