@@ -29,11 +29,11 @@ export default function Home() {
             <Link href="#projects" className="text-sm font-medium hover:text-primary transition-colors">
               Projects
             </Link>
-            <Link href="#skills" className="text-sm font-medium hover:text-primary transition-colors">
-              Skills
-            </Link>
             <Link href="#education" className="text-sm font-medium hover:text-primary transition-colors">
               Education
+            </Link>
+            <Link href="#skills" className="text-sm font-medium hover:text-primary transition-colors">
+              Skills
             </Link>
             <Link href="#values" className="text-sm font-medium hover:text-primary transition-colors">
               Values
@@ -73,15 +73,15 @@ export default function Home() {
         <section className="py-20 md:py-28 container">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              Lead Software Engineer & Product Owner
+              Building Scalable Products in the Cloud
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Multi-Cloud Infrastructure Engineering & Developer Experience
+              Experienced Lead Software Engineer and Product Owner specializing in Multi-Cloud Infrastructure, Developer Experience, and driving impactful product strategies.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg">
                 <Link href="#projects">
-                  View my work <ArrowRight className="ml-2 h-4 w-4" />
+                  Explore My Portfolio <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>
@@ -161,18 +161,18 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Skills Section */}
-        <section id="skills" className="py-16 container">
-          <h2 className="text-3xl font-bold tracking-tight mb-8">Skills & Expertise</h2>
-          <SkillsSection />
-        </section>
-
         {/* Education Section */}
         <section id="education" className="py-16">
           <div className="container">
             <h2 className="text-3xl font-bold tracking-tight mb-8">Education</h2>
             <EducationSection />
           </div>
+        </section>
+
+        {/* Skills Section */}
+        <section id="skills" className="py-16 container">
+          <h2 className="text-3xl font-bold tracking-tight mb-8">Skills & Expertise</h2>
+          <SkillsSection />
         </section>
 
         {/* Values Section */}

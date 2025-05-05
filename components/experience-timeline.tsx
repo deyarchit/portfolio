@@ -4,6 +4,19 @@ import { Badge } from "@/components/ui/badge"
 export default function ExperienceTimeline() {
   const experiences = [
     {
+      "title": "Founder",
+      "company": "WADE AI",
+      "period": "March 2025 - Present",
+      "location": "San Francisco Bay Area",
+      "description": "Developed a powerful and unifying framework to address the challenge of scattered project context and ineffective decision-making. This framework streamlines information organization, captures decision rationales, and provides AI-powered insights (leveraging natural language processing) for well-informed choices.",
+      "achievements": [
+        "Conceptualized and designed a novel framework for organizing fragmented project information into a cohesive system.",
+        "Developed a clear information architecture to establish a shared source of truth for project context and decisions, which enforced the documentation of decision rationales to ensure transparency and accountability.",
+        "Integrated AI capabilities (using Python) to extract insights and support well-informed decision-making based on structured data.",
+      ],
+      "technologies": "Product Creation, AI Engineering, Next.js, Go, Python",      
+    },
+    {
       title: "Lead Software Engineer | Continuous Delivery",
       company: "Salesforce",
       period: "February 2022 - February 2025 (3 years 1 month)",

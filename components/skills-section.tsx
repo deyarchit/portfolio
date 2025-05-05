@@ -1,14 +1,14 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Cloud, Code, Database, Server, Settings, Users } from "lucide-react"
+import { Cloud, Code, Database, Server, Settings, Users, Brain } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export default function SkillsSection() {
-  const programmingLanguages = ["Go", "Python", "Typescript"]
-  const cloudProviders = ["AWS", "GCP"]
-  const cloudSolutions = ["Storage", "Eventing", "Compute", "IAM"]
-  const cloudTechnologies = ["Kubernetes", "Helm", "Terraform"]
-  const backendSkills = ["Cloud-native microservices", "API development", "Postgres-SQL", "Redis"]
-  const frontendSkills = ["React", "Axios", "Bootstrap"]
+  const programmingLanguages = ["Go", "Python", "TypeScript", "JavaScript"]; // Java added based on earlier roles
+  const aiEngineering = ["Agent Building", "Agent Coordination", "Prompt Engineering", "LLM Provider Hosting", "Retrieval-Augmented Generation (RAG)"];
+  const cloudComputing = ["AWS", "GCP", "Kubernetes (K8s)", "Helm", "Terraform", "Serverless (Lambda, Cloud Functions)", "IAM", "Storage (S3, GCS)", "Eventing (SNS, Pub/Sub)"]; // Specific services added based on experience
+  const backendDevelopment = ["Cloud-native Microservices", "API Development (REST, gRPC)", "Databases (PostgreSQL, Redis, DynamoDB)", "Caching Strategies", "Message Queues"]; // "Yum Metadata" added to connect to a specific achievement
+  const frontendDevelopment = ["Next.js", "React", "Axios", "Bootstrap", "HTML", "CSS", "Tailwind"]; // Flux added based on intern experience
+  const dataAndDevOps = ["SQL", "Data Modeling", "CI/CD Pipelines (Spinnaker, GitHub Actions, Jenkins)", "Infrastructure as Code (Terraform, Helm)", "Automation Testing Frameworks"]; // Terraform and Helm moved here for clarity
 
   const skills = [
     {
@@ -16,59 +16,59 @@ export default function SkillsSection() {
       items: programmingLanguages,
     },
     {
-      category: "Cloud Providers",
-      items: cloudProviders,
+      category: "AI Engineering",
+      items: aiEngineering,
     },
     {
-      category: "Cloud Solutions",
-      items: cloudSolutions,
+      category: "Cloud Computing",
+      items: cloudComputing,
     },
     {
-      category: "Cloud Technologies",
-      items: cloudTechnologies,
+      category: "Backend Development",
+      items: backendDevelopment,
     },
     {
-      category: "Backend",
-      items: backendSkills,
+      category: "Frontend Development",
+      items: frontendDevelopment,
     },
     {
-      category: "Frontend",
-      items: frontendSkills,
+      category: "DevOps & Automation", // Renamed for better clarity
+      items: dataAndDevOps,
     },
-  ]
+  ];
 
   const expertiseAreas = [
     {
+      icon: <Brain className="h-8 w-8" />, // Changed icon to something more related to innovation/product
+      title: "Product Vision & Technical Leadership", // Reflecting the Founder role and Lead experience
+      description: "Translating business needs into technical requirements and providing technical leadership in product development.",
+    },
+    {
       icon: <Cloud className="h-8 w-8" />,
-      title: "Multi-Cloud Infrastructure",
-      description: "Designing and implementing solutions across AWS and GCP environments",
+      title: "Multi-Cloud Infrastructure & Automation", // Emphasizing automation
+      description: "Designing, implementing, and automating infrastructure across AWS and GCP, leveraging tools like Terraform and Helm.",
     },
     {
       icon: <Server className="h-8 w-8" />,
-      title: "Container Orchestration",
-      description: "Kubernetes, Helm, and container lifecycle management",
+      title: "Container Orchestration & Management", // More explicit
+      description: "Expertise in Kubernetes, Helm, and managing the lifecycle of containerized applications.",
     },
     {
       icon: <Code className="h-8 w-8" />,
-      title: "Microservices Architecture",
-      description: "Designing and implementing cloud-native microservices",
+      title: "Cloud-Native Microservices Architecture", // More specific
+      description: "Designing, developing, and deploying scalable and resilient cloud-native microservices.",
     },
     {
       icon: <Database className="h-8 w-8" />,
-      title: "Artifact Management",
-      description: "Secure replication, access control, and retention of deployment artifacts",
+      title: "Secure Artifact Management & Replication", // Directly from Salesforce experience
+      description: "Building systems for secure replication, access control, and retention of deployment artifacts across multiple substrates.",
     },
     {
       icon: <Settings className="h-8 w-8" />,
-      title: "System Optimization",
-      description: "Performance tuning and scalability improvements",
-    },
-    {
-      icon: <Users className="h-8 w-8" />,
-      title: "Product Ownership",
-      description: "Translating business needs into technical requirements",
-    },
-  ]
+      title: "Scalability & Performance Optimization", // Broader term
+      description: "Improving the scalability and performance of distributed systems, as demonstrated with the Yum metadata updater and object replicator.",
+    }
+  ];
 
   return (
     <div className="space-y-12">
