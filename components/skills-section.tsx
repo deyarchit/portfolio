@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Cloud, Code, Database, Server, Settings, Users, Brain } from "lucide-react"
+import { Cloud, Code, Database, Server, Settings, Brain } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export default function SkillsSection() {
