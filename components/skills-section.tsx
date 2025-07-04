@@ -3,12 +3,12 @@ import { Cloud, Code, Database, Server, Settings, Brain } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export default function SkillsSection() {
-  const programmingLanguages = ["Go", "Python", "TypeScript", "JavaScript"]; // Java added based on earlier roles
+  const programmingLanguages = ["Go", "Python", "TypeScript"]; 
   const aiEngineering = ["Agent Building", "Agent Coordination", "Prompt Engineering", "LLM Provider Hosting", "Retrieval-Augmented Generation (RAG)"];
-  const cloudComputing = ["AWS", "GCP", "Kubernetes (K8s)", "Helm", "Terraform", "Serverless (Lambda, Cloud Functions)", "IAM", "Storage (S3, GCS)", "Eventing (SNS, Pub/Sub)"]; // Specific services added based on experience
-  const backendDevelopment = ["Cloud-native Microservices", "API Development (REST, gRPC)", "Databases (PostgreSQL, Redis, DynamoDB)", "Caching Strategies", "Message Queues"]; // "Yum Metadata" added to connect to a specific achievement
-  const frontendDevelopment = ["Next.js", "React", "Axios", "Bootstrap", "HTML", "CSS", "Tailwind"]; // Flux added based on intern experience
-  const dataAndDevOps = ["SQL", "Data Modeling", "CI/CD Pipelines (Spinnaker, GitHub Actions, Jenkins)", "Infrastructure as Code (Terraform, Helm)", "Automation Testing Frameworks"]; // Terraform and Helm moved here for clarity
+  const cloudComputing = ["AWS", "GCP", "Kubernetes (K8s)", "Helm", "Terraform", "Serverless (Lambda, Cloud Functions)", "IAM", "Storage (S3, GCS)", "Eventing (SNS, Pub/Sub)"];
+  const backendDevelopment = ["Cloud-native Microservices", "API Development", "Databases (PostgreSQL, Redis, DynamoDB)", "Message Queues"];
+  const frontendDevelopment = ["Next.js", "React", "Tailwind", "ShadeCn","Axios", "Bootstrap", "HTML", "CSS"]; 
+  const dataAndDevOps = ["CI/CD Pipelines (Spinnaker, GitHub Actions, Jenkins)", "Infrastructure as Code (Terraform, Helm)", "Automation Testing Frameworks"];
 
   const skills = [
     {
@@ -32,7 +32,7 @@ export default function SkillsSection() {
       items: frontendDevelopment,
     },
     {
-      category: "DevOps & Automation", // Renamed for better clarity
+      category: "DevOps & Automation",
       items: dataAndDevOps,
     },
   ];
