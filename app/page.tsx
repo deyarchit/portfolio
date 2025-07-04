@@ -128,6 +128,12 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight mb-8">Featured Projects</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <ProjectCard
+                title="WADE AI"
+                description="Developed a unifying framework to address scattered project context and ineffective decision-making. This system streamlines information organization, captures decision rationales, and leverages AI for informed decision making."
+                tags={["Product Creation", "AI Engineering", "Next.js", "Go", "Python"]}
+                link="https://www.wade-ai.com"
+              />
+              <ProjectCard
                 title="Cloud-Agnostic Managed Operations at Scale"
                 description="Laid the foundation for a secure and scalable mechanism that allows thousands of Salesforce developers to perform various Kubernetes and Cloud resource operations on any cloud provider where Salesforce services are deployed."
                 tags={["Go", "Kubernetes", "Terraform", "AWS", "GCP"]}
@@ -136,12 +142,12 @@ export default function Home() {
                 title="Cross-Substrate Artifact Management"
                 description="Co-architected a collection of 15+ single-purpose microservices using cloud-native design patterns for secure artifact replication, permission, and lifecycle management across multi-cloud environments."
                 tags={["Go", "Microservices", "Kubernetes", "AWS", "GCP"]}
-              />
-              <ProjectCard
+              />              
+              {/* <ProjectCard
                 title="Queue-based Autoscaling for Artifact Replicators"
                 description="Led the development of a system that automatically scaled based on queue demand. This system managed up to PetaBytes of data, guaranteeing high availability and reliability."
                 tags={["Go", "Keda", "Microservices", "Cloud Eventing", "Kubernetes"]}
-              />
+              /> */}
               <ProjectCard
                 title="Cloud-Native Yum Repository"
                 description="Conceptualized & developed a Cloud-Native Yum Repository which worked efficiently at enterprise scale. Implemented multiple scalability improvements to handle platform growth patterns and reduced repository metadata update times on large Yum repos by 66%."
@@ -194,7 +200,7 @@ export default function Home() {
                 title="Business-Centric Decisions"
                 description="My guiding principle is to make decisions that maximize business success. This requires a comprehensive assessment of all viewpoints, ensuring alignment towards overarching company goals."
                 icon={<Target className="h-6 w-6" />}
-              />              
+              />
               <ValueCard
                 title="Fair Recognition & Incentives"
                 description="I believe fair recognition and incentives are fundamental to building a successful business. They foster collaboration, create a positive environment, and drive innovation and growth."

@@ -38,7 +38,11 @@ export default function ProjectCard({ title, description, tags, link }: ProjectC
       </CardContent>
       {link && (
         <CardFooter>
-          <Link href={link} className="text-sm font-medium flex items-center text-primary hover:underline">
+          <Link
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer" // Security best practice for target="_blank"
+            className="text-sm font-medium flex items-center text-primary hover:underline">
             View project details <ArrowUpRight className="ml-1 h-3 w-3" />
           </Link>
         </CardFooter>
