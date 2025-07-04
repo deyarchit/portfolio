@@ -4,17 +4,18 @@ import { Badge } from "@/components/ui/badge"
 export default function ExperienceTimeline() {
   const experiences = [
     {
-      "title": "Founder",
-      "company": "WADE AI",
-      "period": "March 2025 - Present",
-      "location": "San Francisco Bay Area",
-      "description": "Developed a powerful and unifying framework to address the challenge of scattered project context and ineffective decision-making. This framework streamlines information organization, captures decision rationales, and provides AI-powered insights for well-informed choices.",
-      "achievements": [
-        "Conceptualized and designed a novel framework for organizing fragmented project information into a cohesive system.",
-        "Developed a clear information architecture to establish a shared source of truth for project context and decisions, which enforced the documentation of decision rationales to ensure transparency and accountability.",
-        "Integrated AI capabilities to extract insights and support well-informed decision-making based on structured data.",
+      title: "Founder",
+      company: "WADE AI",
+      period: "March 2025 - Present",
+      location: "San Francisco Bay Area",
+      description: "Developed a unifying framework to address scattered project context and ineffective decision-making. This system streamlines information organization, captures decision rationales, and leverages AI for data-driven insights.",
+      achievements: [
+        "Designed a novel framework to unify fragmented project data into a cohesive system for structured organization.",
+        "Established an information architecture that creates a shared source of truth, ensuring accurate capture of project context and decision rationale.",
+        "Integrated AI-driven analytics to extract actionable insights and support data-informed decision-making.",
+        "Exposed the backend API as an MCP tool, enabling agents to interact with the framework for seamless integration and automation."
       ],
-      "technologies": "Product Creation, AI Engineering, Next.js, Go, Python",      
+      technologies: "Product Creation, AI Engineering, Next.js, Go, Python"
     },
     {
       title: "Lead Software Engineer | Continuous Delivery",
@@ -24,10 +25,10 @@ export default function ExperienceTimeline() {
       description:
         "Lead Engineer on the team responsible for multi substrate secure artifact replication, access control and retention.",
       achievements: [
-        "Involved in architecture and design of Safe Container lifecycle initiative",
+        "Contributed towards the architecture and design of Safe Container lifecycle initiative",
+        "Led multiple cost-saving initiatives in artifact management, resulting in an annual savings of approximately $2.4 million.",
         "Worked on improving scalability of Yum metadata updater service to handle the growth patterns of the platform",
-        "Guided the development and adoption of queue based autoscaling for artifact replicators using Keda",
-        "Working on securely exposing APIs from public cloud to on-prem clients",
+        "Guided the development and adoption of queue based autoscaling for artifact replicators using Keda to efficiently handle scaling challenges",        
       ],
       technologies: "Go, K8, Terraform, Helm, Spinnaker, AWS, GCP",
     },
@@ -59,7 +60,6 @@ export default function ExperienceTimeline() {
         "Build Optimizations: Worked on setting up a shared parent build for instrumenting the codebase which helped save > 6000 hours of compute every week which amounted to ~ $30k monthly savings",
         "Enhancing the coverage report generation process: Worked on making the report generation process distributed using consistent hashing and automated entire process using spring state machines",
         "Service Ownership - Co-owned & supported the service, Infrastructure Management (patching, maintenance, troubleshooting), Service Deployments, Service Availability, Customer Support",
-        "Public Cloud Enablement - Worked on POC for migrating code coverage services to public cloud",
       ],
       technologies: "Java, Spring, Ant, Gradle, K8",
     },
@@ -79,32 +79,19 @@ export default function ExperienceTimeline() {
     {
       title: "Senior Systems Engineer",
       company: "Infosys (Client - CISCO)",
-      period: "June 2013 - May 2015 (2 years)",
+      period: "Oct 2011 - May 2015 (3 years 8 months)",
       location: "",
       description: "Responsible for automation framework creation and maintenance.",
       achievements: [
-        "Researched on the latest market automation tools and decided on the approach and technology selection for our Automation framework creation",
-        "Crafted the backbone of the automation framework exploiting the concepts of Page Objects, Modularization and Data Driven Testing",
-        "Co-developed the core intelligence of the Auto generation module which could generate element ID's and test data from the web page",
-        "Setup the Git, Gerrit & Jenkins Development flow with automation framework",
-        "Performed testing of REST based web services",
+        "Designed and implemented a foundational UI automation framework, incorporating Page Objects, Modularization, and Data-Driven Testing to enhance quality and accelerate development.",
+        "Developed intelligent automation modules for dynamic element ID and test data generation.",
+        "Streamlined development workflows by setting up Git, Gerrit, and Jenkins for the automation framework.",
+        "Executed extensive UI and REST API testing, including automation script creation, regression, sanity, and functional testing.",
+        "Improved test reporting mechanisms and managed critical test suite maintenance to meet release deadlines.",
       ],
-      technologies: "Automation Frameworks, Git, Gerrit, Jenkins, REST API Testing",
-    },
-    {
-      title: "Systems Engineer",
-      company: "Infosys (Client - CISCO)",
-      period: "October 2011 - May 2013 (1 year 8 months)",
-      location: "",
-      description: "Responsible for UI automation and testing.",
-      achievements: [
-        "Created Automation scripts for UI features",
-        "Performed Regression, Sanity, Functional Testing",
-        "Maintained and enhanced sanity test suite under tight deadlines",
-        "Created effective test report mechanisms for updating Higher Management",
-      ],
-      technologies: "UI Automation, Testing Frameworks",
-    },
+      technologies: "Automation Frameworks, UI Automation, Git, Jenkins",
+    }
+
   ]
 
   return (
