@@ -182,22 +182,22 @@ export default function Home() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <ValueCard
                 title="People First"
-                description="I firmly believe that people, when genuinely motivated to solve a challenge, can overcome any obstacle. A positive and collaborative spirit makes the journey truly rewarding."
+                description="For me, people always come first. The collective mindset and collaboration within a team are more critical than the specific problem or technology stack."
                 icon={<Users className="h-6 w-6" />}
               />
               <ValueCard
-                title="Business-Centric Decisions"
-                description="My guiding principle is to make decisions that maximize the business's success, rather than prioritizing the interests of any single team or sub-organization. A comprehensive assessment of all relevant viewpoints is essential to informed decision-making."
-                icon={<Target className="h-6 w-6" />}
-              />
-              <ValueCard
                 title="Team Collaboration"
-                description="A team’s greatest strength lies in its collective identity. By prioritizing shared goals and fostering a ‘we’ mentality, I actively seek opportunities to reinforce these values and unlock the full potential of every team member."
+                description="A team’s greatest strength lies in its collective identity. A unified 'we' far surpasses individual efforts, and I actively seek to empower every team member to achieve their full potential together."
                 icon={<Share2 className="h-6 w-6" />}
               />
               <ValueCard
+                title="Business-Centric Decisions"
+                description="My guiding principle is to make decisions that maximize business success. This requires a comprehensive assessment of all viewpoints, ensuring alignment towards overarching company goals."
+                icon={<Target className="h-6 w-6" />}
+              />              
+              <ValueCard
                 title="Fair Recognition & Incentives"
-                description="Fair recognition of contributions is fundamental to building a successful business. It fosters collaboration, creating a positive and productive environment that encourages innovation and growth."
+                description="I believe fair recognition and incentives are fundamental to building a successful business. They foster collaboration, create a positive environment, and drive innovation and growth."
                 icon={<Award className="h-6 w-6" />}
               />
               <ValueCard
@@ -207,12 +207,12 @@ export default function Home() {
               />
               <ValueCard
                 title="Work-Life Harmony"
-                description="Working with positive and solution-oriented people makes work engaging and fulfilling. However, I believe having some periods of time away from work is crucial for long-term well-being."
+                description="I advocate for a healthy work-life harmony, recognizing that time away from work is crucial for long-term well-being and ultimately benefits both individuals and the business."
                 icon={<Heart className="h-6 w-6" />}
               />
               <ValueCard
                 title="&quot;Human Count&quot;, Not &quot;Head Count&quot;"
-                description="The term ‘Head Count’—often used to represent employees—is a reductive and somewhat unsettling reminder that businesses frequently prioritize numbers over people. We should recognize and value employees as whole individuals."
+                description="I believe in considering employees as 'human count' rather than 'head count.' This means recognizing and empowering individuals, ensuring businesses prioritize people over mere numbers."
                 icon={<Users className="h-6 w-6" />}
               />
             </div>
