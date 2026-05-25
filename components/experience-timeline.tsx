@@ -4,9 +4,21 @@ import { Badge } from "@/components/ui/badge"
 export default function ExperienceTimeline() {
   const experiences = [
     {
+      title: "Founding AI Engineer",
+      company: "AI Stealth Startup",
+      period: "January 2026 - February 2026",
+      location: "San Francisco Bay Area",
+      description: "Founding AI Engineer at an early-stage health-tech startup.",
+      achievements: [
+        "Built a multi-tool conversational health agent combining web search grounding with personal health data retrieval to deliver personalized, context-aware health responses.",
+        "Introduced LLM-driven automated PR reviews (Claude Code) and SonarQube quality instrumentation across all service repositories, establishing engineering guardrails for a 5-engineer team shipping at AI-assisted velocity.",
+      ],
+      technologies: "AI Engineering, Multi-tool Agents, PostgreSQL, Claude Code, SonarQube"
+    },
+    {
       title: "Founder",
       company: "WADE AI",
-      period: "March 2025 - Present",
+      period: "February 2025 - December 2025",
       location: "San Francisco Bay Area",
       description: "Developed a unifying framework to address scattered project context and ineffective decision-making. This system streamlines information organization, captures decision rationales, and leverages AI for data-driven insights.",
       achievements: [
