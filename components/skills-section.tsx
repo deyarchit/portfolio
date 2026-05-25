@@ -4,8 +4,8 @@ import { Badge } from "@/components/ui/badge"
 
 export default function SkillsSection() {
   const programmingLanguages = ["Go", "Python", "TypeScript"]; 
-  const aiEngineering = ["Agent Building", "Agent Coordination", "Prompt Engineering", "LLM Provider Hosting", "Retrieval-Augmented Generation (RAG)"];
-  const cloudComputing = ["AWS", "GCP", "Kubernetes (K8s)", "Helm", "Terraform", "Serverless (Lambda, Cloud Functions)", "IAM", "Storage (S3, GCS)", "Eventing (SNS, Pub/Sub)"];
+  const aiEngineering = ["Agentic Systems (multi-tool, multi-agent)", "RAG", "Embeddings & Vector Search", "Context Management", "Prompt Engineering", "Evals", "MCP"];
+  const cloudComputing = ["AWS", "GCP", "Aliyun", "Kubernetes (K8s)", "Helm", "Terraform", "Serverless (Lambda, Cloud Functions)", "IAM", "Storage (S3, GCS)", "Eventing (SNS, Pub/Sub)"];
   const backendDevelopment = ["Cloud-native Microservices", "API Development", "Databases (PostgreSQL, Redis, DynamoDB)", "Message Queues"];
   const frontendDevelopment = ["Next.js", "React", "Tailwind", "ShadeCn","Axios", "Bootstrap", "HTML", "CSS"]; 
   const dataAndDevOps = ["CI/CD Pipelines (Spinnaker, GitHub Actions, Jenkins)", "Infrastructure as Code (Terraform, Helm)", "Automation Testing Frameworks"];
